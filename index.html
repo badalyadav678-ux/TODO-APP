@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!--version of HTML to use-->
+<html lang="en"> <!-- language of the webpage -->
+
+<head> <!-- head contain the information about the page user don't see it only browser reads it.-->
+    <meta charset="UTF-8"> <!-- How character are stored and supports almost every language and symbol-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport means visible area of web page.every device has different viewport. Width=divice-width = use actual device width with zoom percent of 100%-->
+    <title>TO DO IN APP</title> <!--Browser tab text-->
+    <link rel="stylesheet" href="style.css"> <!-- rel = stylesheet it tells the browser this file contain css and href = location of the css file -->
+</head>
+
+<body> <!-- Everything inside body appears on the screen -->
+
+    <div class="container"><!-- A div is the container element used to group other HTMl element together like holding h1 and other html together and class = container because css needs a way to syle it -->
+
+        <h1>TO DO APP</h1>
+
+        <div class="input-section"><!-- Another grouping box because input button belong together css can style them together -->
+<!-- Input is used to take input from the user, where user can type and chose information. THIS CREATE A TEXT INPUT FIELD WHERE USER CAN TYPE A TASK. TYPE TELL THE BROWSER WHAT KIND OF INPUT FIELD TO CREATE AS WE COULD WRITE TYPE PASSWORD, DATE , NUMBER ETC ACCORDING TO OUR NEED.ID IS THE UNIQUE IDENTITY OF THIS INPUT, jAVASCRIPT IS USED TO IDENTITY WHICH INPUT THEY ARE TALKING. PLACEHOLDER IS THE HINT SHOWN INSIDE THE BOX-->
+            <input  
+                type="text" 
+                id="todoInput"
+                placeholder="Enter a task"
+            />
+
+            <button id="addBtn"><!-- BUTTON CREATES A CLICKABLE BUTTON -->
+                Add
+            </button>
+
+        </div>
+
+        <ul id="todoList"></ul> <!-- UL STANDS FOR UNORDERED LIST . THINK AS A CONTAINER THAT HOLDS A LIST OF ITEM AND li STAND FOR EVERY SINGLE ITEM INSIDE THE LIST -->
+
+    </div>
+
+    <script src="script.js"></script> <!-- LOAD ANOTHER FILE CALLED scripts.js AND EXECUTE THE JAVASCRIPT CODE INSIDE IT -->
+
+</body>
+
+</html>

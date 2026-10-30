@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;/* It change the writting syyle */
+    background-color: #eee7e7; /* for background color of the entire page*/
+
+    display: flex;/*arrange it in a flexible layout like justify- content is center now container will move to  centered left- right.*/
+    justify-content: center;
+
+    margin-top: 50px;/* without marging it touches the top edge */
+}
+
+.container {
+    background-color: white;/*only the container box will become white*/
+
+    padding: 20px;/*space inside the container box without padding text sticks to the border with padding space will appear between text and box*/
+
+    border-radius: 10px;/* sharp corner*/
+
+    width: 400px;/*set the width (length only ---------) */
+    
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex; /*Without flex the browser places block element one below another. with flex arrange in one flexible row */
+
+    gap: 10px;/*to separate the two box input box and button */
+
+    margin-bottom: 20px;/* Outside spacing otherwise below everything sticks together */
+}
+
+#todoInput {
+    flex: 1;/*without flex= 1 input take only natural size(small size) with flex = 1 it will cover reamaining area after leaving space for button*/
+
+    padding: 10px;/*space inside the container box without padding text sticks to the border with padding space will appear between text and box*/
+
+    font-size: 16px;
+}
+
+#addBtn {
+    padding: 10px 15px;/*It means space = top and bottom = 10px and left and right = 15px*/
+
+    background-color: blue;
+
+    color: white;/*changes text color*/
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+}
+
+#todoList {
+    list-style: none;/*Bullets will disappear */
+
+    padding: 0; /*Default left spacing everything will be on left */
+}
+
+li {
+    display: flex;/*everything arranged in one row like buy milk delete edit */
+
+    justify-content: space-between;/*everything in the row has space between them one will go to right one will be on left */
+
+    align-items: center;/*center the item vertically*/
+
+    background-color: #eee;/* Every task gets a light grey background */
+
+    padding: 10px;/*Add space inside the each task box*/
+
+    margin-bottom: 10px;/* Leave space between the task */
+
+    border-radius: 5px;
+}
+
+li span {
+    flex: 1;/*The text(Buy milk ) grows and take all available space after leaving space for button delete and edit */
+}
+/*Applies to every button inside an <li>*/
+li button {
+    margin-left: 20px;/*margin-left pushes an element away from its left neighbor(delete button will go towards left 10 px), while margin-right pushes other elements away from the current element's right side*/
+
+    padding: 5px 10px;/*It means space = top and bottom = 10px and left and right = 15px*/
+
+    border: none;/*Remove the default browser border */
+
+    cursor: pointer;/* Shows the hand cursor on hover.*/
+
+    border-radius: 5px;
+}
+/* Inside each <li>, which is the first button. <li> <span>Buy Milk</span> <button>Delete</button> <button>Edit</button> </li>. First button is Delete so all opertion are performed on delete button */
+li button:first-of-type {
+    background-color: red;
+
+    color: white;
+}
+/* Inside each <li>, which is the last button. <li> <span>Buy Milk</span> <button>Delete</button> <button>Edit</button> </li>. Last button is edit so all opertion are performed on edit button */
+li button:last-of-type {
+    background-color: green;
+
+    color: white;
+} 

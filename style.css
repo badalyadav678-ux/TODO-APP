@@ -104,3 +104,9 @@ li button:last-of-type {
 
     color: white;
 } 
+
+/* Dark mode practice */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
